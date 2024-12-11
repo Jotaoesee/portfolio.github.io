@@ -1,0 +1,50 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+const EXPERIENCE = [
+  {
+    date: "Septiembre 2023 - Actualidad",
+    title: "Grado Superior Desarrollo de Aplicaciones Multiplataforma",
+    company: "I.E.S Isidra de Guzmán",
+    description:
+      "Actualmente cursando el segundo año, especializándome en tecnologías como Java, JavaScript, Kotlin, Flutter, Python, FireBase, SQL y Docker.",
+  },
+  {
+    date: "Enero 2021 - Septiembre 2023",
+    title: "Operario de producción",
+    company: "Deutz Diter",
+    description:
+      "Manejo de centro de mecanizado (rectificadora). Puesta a punto: cambio de herramientas, cambio de programas y ajustes de útiles.",
+  },
+  {
+    date: "Diciembre 2020 - Diciembre 2021",
+    title: "Operario de producción",
+    company: "Siderúrgica Balboa, S.A",
+    description:
+      "Manejo de torno vertical, apoyo en programación, ajustes en cambios de programa y herramientas. Operación de puente grúa para insertar brutos en la máquina.",
+  },
+  {
+    date: "Abril 2020 - Noviembre 2020",
+    title: "Operario de producción",
+    company: "Taller Daniel y Cristian Mecanizados",
+    description:
+      "Programación con WinUnisoft en un centro de mecanizado de 3 ejes, mecanizado en 3 ejes y verificación de piezas fabricadas.",
+  },
+  {
+    date: "Febrero 2019 - Marzo 2020",
+    title: "Operario de producción",
+    company: "Renault Valladolid",
+    description:
+      "Control del robot para pieza de cárter, verificación y exportación de cárteres. Encargado de almacén y AGVs (control y mantenimiento del robot encargado de transportar el bruto a la línea necesaria).",
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="relative">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
